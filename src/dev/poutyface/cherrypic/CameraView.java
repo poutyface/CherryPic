@@ -89,6 +89,6 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback {
 			Toast.makeText(mContext, "ERROR: Send Your Pic!", Toast.LENGTH_SHORT).show();
 			Log.e("MyApp", "Send Error:--------------------------");
 		}
-		Log.e("MyApp", "End Send Data ----------------------------");
+		Log.d("MyApp", "End Send Data ----------------------------");
 	}
 }
