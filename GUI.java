@@ -22,7 +22,6 @@ public class GUI extends JFrame {
   
   this.setBounds(0, 0, WIDTH, HEIGHT);  
   this.setLocation(num/3*WIDTH, num%3*HEIGHT);  
-  this.setUndecorated(true);  
   this.setVisible(true);  
  }  
   
