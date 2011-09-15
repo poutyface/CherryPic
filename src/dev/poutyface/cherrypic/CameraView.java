@@ -79,7 +79,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback {
 			Log.d("MyApp", "Connecting...");
 			socket = new Socket(ADDRESS, PORT);
 			out = new BufferedOutputStream(socket.getOutputStream());
-			Log.d("MyApp", "Sending data...");
+			Log.d("MyApp", "Sending data... " + data.length + "Byte");
 			out.write(data);
 			Toast.makeText(mContext, "SUCCESS: Send Your Pic!", Toast.LENGTH_SHORT).show();
 			out.close();
