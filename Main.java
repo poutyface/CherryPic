@@ -25,7 +25,7 @@ public class Main {
     BufferedOutputStream out = new BufferedOutputStream(  
        new FileOutputStream(new File(num + ".jpg")));  
     BufferedInputStream in = new BufferedInputStream(socket.getInputStream());  
-    byte[] buf = new byte[1024];  
+    byte[] buf = new byte[8192];  
     int len;  
     while((len=in.read(buf))!=-1){  
      out.write(buf, 0, len);  
